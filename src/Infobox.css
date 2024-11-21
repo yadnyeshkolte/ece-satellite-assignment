@@ -1,0 +1,42 @@
+
+.infobox {
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+  
+}
+
+.infobox table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.infobox th {
+  text-align: left;
+  padding: 4px;
+  font-weight: bold;
+  border-bottom: 1px solid #a2a9b1;
+}
+
+.infobox td {
+  padding: 4px;
+  border-bottom: 1px solid #a2a9b1;
+  text-align: left;
+}
+
+.infobox th[colspan="2"] {
+  text-align: left;
+
+}
+
+
+.infobox a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+
+
+

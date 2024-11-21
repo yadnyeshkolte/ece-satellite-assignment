@@ -1,0 +1,93 @@
+.container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem; /* Relative gap */
+  padding: 1.25rem; /* Relative padding */
+  box-sizing: border-box;
+}
+
+.heading-container4 {
+  text-align: center;
+  margin-bottom: 1.25rem; /* Relative margin */
+}
+
+.columns-container4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Space columns evenly */
+  width: 100%;
+  gap: 1.25rem; /* Relative gap */
+}
+
+.container4 .column {
+  flex: 1 1 calc(45% - 1.25rem); /* Adjusted for gap (20px = ~1.25rem) */
+  border: 0.0625rem solid #ddd; /* Border thickness in rem */
+  border-radius: 0.5rem; /* Relative border radius */
+  padding: 1.25rem; /* Relative padding */
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.67); /* Box shadow in rem */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container4 .toggle-button {
+  margin-top: .625rem; /* Relative margin */
+  padding: .5rem 1.25rem; /* Relative padding */
+  font-size: .875rem; /* Relative font size (14px = ~0.875rem) */
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: .25rem; /* Relative border radius */
+  cursor: pointer;
+}
+
+.container4 .toggle-button:hover {
+  background-color: #080808; /* Darker shade on hover */
+}
+
+.issue-container4,
+.resolution-container4 {
+  margin-top: .625rem; /* Relative margin */
+  text-align: justify; /* Justify text for better readability */
+}
+
+/* Responsive Styles */
+@media (max-width:64rem) { /* ~1024px */
+   .container4 .columns-container4 {
+      justify-content: center; /* Center columns on medium screens */
+   }
+
+   .container4 .column {
+      flex-basis: calc(50% - 1.25rem); /* Two columns per row on medium screens */
+   }
+}
+
+@media (max-width:48rem) { /* ~768px */
+   .container4 .columns-container4 {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+      align-items: stretch; /* Stretch columns to full width */
+   }
+
+   .container4 .column {
+      flex-basis: calc(100% - 2.5rem); /* Full width with margin adjustment */
+      margin-bottom: 1.25rem; /* Add space between stacked columns */
+   }
+}
+
+@media (max-width:30rem) { /* ~480px */
+   .container4 .toggle-button {
+      padding: .5rem; /* Smaller padding for buttons on very small screens */
+      font-size: .75rem; /* Smaller font size for buttons (12px = ~0.75rem) */
+   }
+
+   .container4 .column {
+      padding:.9375rem; /* Reduce padding in columns for smaller screens (15px = ~0.9375rem) */
+   }
+
+   .issue-container4,
+   .resolution-container4 {
+      font-size: smaller; /* Adjust font size for better readability on small devices */
+   }
+}

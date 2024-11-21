@@ -1,0 +1,75 @@
+.container3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Relative gap */
+  padding: 1.25rem; /* Relative padding */
+  box-sizing: border-box;
+}
+
+.card-upper-container3,
+.card-containe3,
+.card-lower-container3 {
+  margin-bottom: 0.625rem; /* Relative margin */
+}
+
+.card-containe3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2.5rem; /* Relative padding for space at the bottom */
+}
+
+.card3 {
+  flex: 1 1 12.5rem; /* Default size for larger screens (200px = ~12.5rem) */
+  border: 0.0625rem solid #ddd; /* Border thickness in rem */
+  border-radius: 0.5rem; /* Relative border radius */
+  padding: 1.25rem; /* Relative padding */
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,0.67); /* Box shadow in rem */
+  box-sizing: border-box;
+  transition: transform 0.3s ease; /* Smooth transition */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Evenly distribute content */
+  height: auto; /* Allow cards to adjust height based on content */
+}
+
+.card3-1,
+.card3-2 {
+  flex: 1 1 18.75rem; /* Default size for larger screens (300px = ~18.75rem) */
+  border: 0.0625rem solid #ddd; /* Border thickness in rem */
+  border-radius: 0.5rem; /* Relative border radius */
+  padding: 1.25rem; /* Relative padding */
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,0.3); /* Box shadow in rem */
+  box-sizing: border-box;
+  transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Evenly distribute content */
+}
+
+.card3-1,
+.card3-2 {
+    height: auto; /* Allow cards to adjust height based on content */
+    filter: blur(3px); /* Apply blur effect initially */
+}
+
+.card3-1:hover,
+.card3-2:hover {
+    filter: blur(0px); /* Remove blur on hover */
+    transform: scale(1.55); /* Scale up for a better effect */
+    background-color: rgba(0,0,0,0.1);
+}
+
+.blue {
+    filter: blur(5px); /* Change to blue when class 'blue' is added */
+}
+
+/* Responsive Styles */
+@media (max-width:48rem) { /* ~768px */
+    .card-containe3 {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1.25rem; /* Adjusted relative padding for smaller screens */
+    }
+}

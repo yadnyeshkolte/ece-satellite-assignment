@@ -1,0 +1,121 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem; /* Base padding */
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em; /* Base padding */
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em; /* Base card padding */
+}
+
+.read-the-docs {
+  color: #FFFFFF;
+}
+
+.section {
+  width: 100%;
+  height: auto; /* Allow sections to adjust height based on content */
+  min-height: calc(100vh - 4rem); /* Ensure each section takes full viewport height minus some space for padding */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.slides {
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.sliding-window {
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+}
+
+/* Hide the scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  #root {
+    padding: 1rem; /* Reduced padding for smaller screens */
+    gap: .5rem; /* Add gap for better spacing */
+    text-align: center; 
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; 
+    justify-content: center; 
+    min-height: calc(100vh - 2rem); /* Adjust minimum height for smaller screens */
+   }
+
+   .logo {
+     height: 4em; /* Smaller logo size */
+     padding: .75em; /* Reduced padding */
+   }
+
+   .card {
+     padding: .75em; /* Reduced card padding for smaller screens */
+     margin-bottom: .75rem; /* Add margin below cards for spacing */
+   }
+
+   .section {
+     min-height: auto; /* Allow sections to adjust height based on content */
+   }
+
+   .slides,
+   .sliding-window {
+     height: auto; /* Adjust height for smaller screens */
+     margin-bottom: .5rem; /* Add margin below slides for spacing */
+   }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+   #root {
+      padding :1.5rem; /* Adjusted padding for medium screens */
+      gap :1rem; /* Add gap between elements */
+   }
+
+   .logo {
+     height: 5em; /* Medium logo size */
+     padding: 1.25em; /* Adjusted padding */
+   }
+
+   .card {
+     padding: 1.5em; /* Increased card padding for medium screens */
+     margin-bottom: .75rem; /* Add margin below cards for spacing */
+   }
+}

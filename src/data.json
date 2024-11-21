@@ -1,0 +1,7 @@
+{
+  "countries": [
+    { "id": "IN", "generation": "G3" },
+    { "id": "US", "generation": "G4" },
+    { "id": "CN", "generation": "G2" }
+  ]
+}
