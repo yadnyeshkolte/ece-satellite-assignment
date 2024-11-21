@@ -100,7 +100,7 @@ return (
                       <tr>
                         <th>
                           <a href="https://www.itu.int/en/Pages/default.aspx" target='blank'>
-                            <img src='./src/assets/Itu-logo.png' alt='ITU Logo'></img>
+                            <img src='https://github.com/yadnyeshkolte/ece-satellite-assignment/blob/main/src/assets/Itu-logo.png' alt='ITU Logo'></img>
                           </a>
                         </th>
                       </tr>
