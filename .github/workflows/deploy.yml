@@ -1,4 +1,4 @@
-name: Nodejs
+name: Deploy
 
 on:
   push:

@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yadnyesh.github.io/ece-satellite-assignment",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "deploy": "gh-pages -d build",
     "fullpage.js": "^4.0.30",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
