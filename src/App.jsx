@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import fullpage from 'fullpage.js';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
