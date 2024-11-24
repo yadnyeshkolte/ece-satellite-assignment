@@ -450,14 +450,6 @@ return (
       </div>
     </div>
   </section>
-  <section className='section'>
-  <div className='slides slide6'>
-  <div className='container5'>
-    
-
-  </div>
-  </div>
-  </section>
 </div>
 </>
 )
